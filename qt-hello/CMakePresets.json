@@ -28,6 +28,16 @@
             }
         },
         {
+            "name": "windows-debug",
+            "displayName": "windows debug",
+            "description": "windows 平台下使用 mingw 构建 debug 版本",
+            "inherits": "windows-base",
+            "binaryDir": "${sourceDir}/build/windows-debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
             "name": "linux-base",
             "displayName": "linux base",
             "description": "linux 通用设置",
@@ -53,6 +63,10 @@
         {
             "name": "windows-release",
             "configurePreset": "windows-release"
+        },
+        {
+            "name": "windows-debug",
+            "configurePreset": "windows-debug"
         },
         {
             "name": "linux-release",
