@@ -2,7 +2,7 @@ aux_source_directory(. JANNA_LIB_UTIL_SOURCES)
 list(APPEND JANNA_LIB_UTIL_SOURCES
     ${CMAKE_SOURCE_DIR}/include/qt-hello/util/app_config.h
     ${CMAKE_SOURCE_DIR}/include/qt-hello/util/configuration.h
-    ${CMAKE_SOURCE_DIR}/include/qt-hello/util/log_util
+    ${CMAKE_SOURCE_DIR}/include/qt-hello/util/log_util.h
 )
 qt_add_library(${janna_lib_util_lib_name} SHARED ${JANNA_LIB_UTIL_SOURCES})
 
