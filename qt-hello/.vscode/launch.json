@@ -26,21 +26,17 @@
         },
         {
             "name": "windows_app",
-            "type": "lldb",
+            "type": "by-gdb",
             "request": "launch",
             "program": "${workspaceRoot}/build/windows-debug/dist/bin/qt-hello.exe",
-            "args": [],
             "cwd": "${workspaceFolder}/build/windows-debug/dist/bin",
             "preLaunchTask": "build-debug"
         },
         {
             "name": "windows_test_common",
-            "type": "lldb",
+            "type": "by-gdb",
             "request": "launch",
             "program": "${workspaceRoot}/build/windows-debug/dist/test/qt-hello_test.exe",
-            "args": [
-                "testCommon"
-            ],
             "cwd": "${workspaceFolder}/build/windows-debug/dist/bin",
             "preLaunchTask": "build-debug"
         }
