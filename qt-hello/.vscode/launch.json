@@ -28,7 +28,7 @@
             "name": "windows_app",
             "type": "lldb",
             "request": "launch",
-            "program": "${workspaceRoot}/build/windows-debug/dist/bin/qt-hello",
+            "program": "${workspaceRoot}/build/windows-debug/dist/bin/qt-hello.exe",
             "args": [],
             "cwd": "${workspaceFolder}/build/windows-debug/dist/bin",
             "preLaunchTask": "build-debug"
@@ -37,7 +37,7 @@
             "name": "windows_test_common",
             "type": "lldb",
             "request": "launch",
-            "program": "${workspaceRoot}/build/windows-debug/test/bin/qt-hello_hello",
+            "program": "${workspaceRoot}/build/windows-debug/dist/test/qt-hello_test.exe",
             "args": [
                 "testCommon"
             ],
