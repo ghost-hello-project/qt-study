@@ -1,7 +1,10 @@
 #include "qt-hello/app/mainwindow.h"
 
+#include "qt-hello/util/log_util.h"
+
+namespace janna {
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
-    this->log = janna::LogUtil::getLogger("app");
+    this->log = LogUtil::getLogger("app");
 }
 
 void MainWindow::closeEvent(QCloseEvent *event) {
@@ -11,3 +14,5 @@ void MainWindow::closeEvent(QCloseEvent *event) {
 
     event->accept();
 }
+
+}  // namespace janna

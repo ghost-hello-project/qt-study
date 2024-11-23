@@ -1,13 +1,10 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
-
+#pragma once
 #include <spdlog/spdlog.h>
 
 #include <QCloseEvent>
 #include <QMainWindow>
 
-#include "qt-hello/util/log_util.h"
-
+namespace janna {
 class MainWindow : public QMainWindow {
     Q_OBJECT
 
@@ -21,4 +18,4 @@ protected:
 private:
     std::shared_ptr<spdlog::logger> log;
 };
-#endif  // MAINWINDOW_H
+};  // namespace janna

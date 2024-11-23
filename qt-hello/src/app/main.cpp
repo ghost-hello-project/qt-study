@@ -11,9 +11,10 @@
 
 void exit();
 
+using namespace janna;
 int main(int argc, char *argv[]) {
-    janna::LogUtil::init(janna::AppConfig::getInstance()->logLevel(), "../logs/app.log");
-    std::shared_ptr<spdlog::logger> log = janna::LogUtil::getLogger("app");
+    LogUtil::init(AppConfig::getInstance()->logLevel(), "../logs/app.log");
+    std::shared_ptr<spdlog::logger> log = LogUtil::getLogger("app");
     SPDLOG_LOGGER_DEBUG(log, fmt::format("janna is running..."));
 
     QApplication a(argc, argv);
