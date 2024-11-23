@@ -67,6 +67,9 @@
             "windows": {
                 "command": "cd build/windows-release/dist/bin && ./qt-hello",
             },
+            "linux": {
+                "command": "cd build/linux-release/dist/bin && ./qt-hello",
+            },
             "dependsOn": [
                 "build-release"
             ]
