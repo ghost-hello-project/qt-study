@@ -5,11 +5,42 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "app",
+            "name": "linux_app",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceRoot}/build/linux-debug/dist/bin/qt-hello",
+            "args": [],
+            "cwd": "${workspaceFolder}/build/linux-debug/dist/bin",
+            "preLaunchTask": "build-debug"
+        },
+        {
+            "name": "linux_test_common",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceRoot}/build/linux-debug/dist/test/qt-hello_test",
+            "args": [
+                "testCommon"
+            ],
+            "cwd": "${workspaceFolder}/build/linux-debug/dist/bin",
+            "preLaunchTask": "build-debug"
+        },
+        {
+            "name": "windows_app",
             "type": "lldb",
             "request": "launch",
             "program": "${workspaceRoot}/build/windows-debug/dist/bin/qt-hello",
             "args": [],
+            "cwd": "${workspaceFolder}/build/windows-debug/dist/bin",
+            "preLaunchTask": "build-debug"
+        },
+        {
+            "name": "windows_test_common",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceRoot}/build/windows-debug/test/bin/qt-hello_hello",
+            "args": [
+                "testCommon"
+            ],
             "cwd": "${workspaceFolder}/build/windows-debug/dist/bin",
             "preLaunchTask": "build-debug"
         }
