@@ -9,7 +9,10 @@ qt_add_executable(qt-hello
     ${APP_SOURCES}
 )
 
-target_link_libraries(qt-hello PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(qt-hello PRIVATE
+    ${janna_lib_util_lib_name}
+    Qt${QT_VERSION_MAJOR}::Widgets
+)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${bin_dir})
 
