@@ -1,0 +1,21 @@
+{
+    "recommendations": [
+        "ms-dotnettools.vscode-dotnet-runtime",
+        "MS-CEINTL.vscode-language-pack-zh-hans",
+        "xaver.clang-format",
+        "llvm-vs-code-extensions.vscode-clangd",
+        "josetr.cmake-language-support-vscode",
+        "vadimcn.vscode-lldb",
+        "CS128.cs128-clang-tidy",
+        "cschlosser.doxdocgen",
+        "usernamehw.errorlens",
+        "coolchyni.beyond-debug",
+        "mhutchie.git-graph",
+        "redjue.git-commit-plugin",
+        "spencerwmiles.vscode-task-buttons",
+        "spmeesseman.vscode-taskexplorer",
+        "wayou.vscode-todo-highlight",
+        "Gruntfuggly.todo-tree",
+        "vscode-icons-team.vscode-icons"
+    ]
+}
