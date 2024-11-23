@@ -19,5 +19,7 @@ if(WIN32)
     add_custom_command(TARGET ${janna_lib_util_lib_name} POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E echo "===> janna util library path: $<TARGET_FILE:${janna_lib_util_lib_name}>"
         COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:${janna_lib_util_lib_name}> ${bin_dir}
+
+        COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:${janna_lib_util_lib_name}> ${dist_dir}/test/
     )
 endif()

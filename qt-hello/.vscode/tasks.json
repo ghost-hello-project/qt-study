@@ -77,7 +77,12 @@
         {
             "label": "run-test-common",
             "type": "shell",
-            "command": "cd build/ninja-release/dist/test && ./janna_test testCommon",
+            "windows": {
+                "command": "cd build/windows-release/dist/test && ./qt-hello_test testCommon",
+            },
+            "linux": {
+                "command": "cd build/linux-release/dist/test && ./qt-hello_test testCommon",
+            },
             "dependsOn": [
                 "build-release"
             ]
